@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* testing purposes only */
+.border{
+    border: solid 1px red;
+}
+
+/* @layer components {
+    @variants responsive {
+      .text-unset {
+        text-align: unset;
+      }
+    }
+  } */

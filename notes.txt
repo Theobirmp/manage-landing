@@ -1,0 +1,8 @@
+add media query for unseting properties 300iq
+ @layer components {
+    @variants responsive {
+      .text-unset {
+        text-align: unset;
+      }
+    }
+  } 

@@ -5,10 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./dist/output.css">
-    <title>Document</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <title>Home Page</title>
 </head> 
-<body>
-        <header class="w-full h-28">
+<body class="relative z-1">
+    <img class="absolute top-[-200px] right-[-200px] z-0 block" src="./img/bg-tablet-pattern.svg" alt="">
+        <header class="w-full h-28 z-1 relative">
             <nav class="container mx-auto px-4 md:px-10 h-28 flex justify-center items-center gap-2 md:gap-10">
                 <img src="./img/logo.svg" alt="" class="block">
                 <ul class="hidden md:flex justify-between flex-grow  lg:px-20 gap-4 md:gap-8 lg:gap-12">
@@ -21,18 +25,18 @@
                 <a href="#" class="hidden md:block min-w-max p-3 bg-brightRed rounded-full text-white px-8 py-2.5 hover:opacity-70">Get Started</a>
             </nav>
         </header>
-        <main class="container mx-auto">
-            <section class="mx-auto flex flex-col-reverse md:flex-row items-center justify-center mt-10 gap-[50px] md:gap-[100px] lg:gap-[200px]">
-                <div class="border flex flex-col content-center p-10 gap-10 max-w-[420px]">
+        <main class="mx-auto relative z-1">
+            <section class="container mx-auto flex flex-col-reverse md:flex-row items-center justify-center mt-10 gap-[50px] md:gap-[100px] lg:gap-[200px]">
+                <div class="flex flex-col content-center p-10 gap-10 max-w-[420px]">
                     <h1 class="text-5xl bold ">Bring everyone <br> together to build <br> better products.</h1>
                     <p class="">Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.</p>
                     <a class="p-3 bg-brightRed rounded-full text-white px-8 py-2.5 self-start hover:opacity-70" href="#">Get Started</a>
                 </div>
-                <div class="border">
+                <div class="">
                     <img src="./img/illustration-intro.svg" alt="">
                 </div>
             </section>
-            <section class="px-2 md:px-0 container mt-24 flex flex-col gap-10 md:flex-row md:gap-[100px] lg:gap-[200px]">
+            <section class="px-2 md:px-0 container mx-auto mt-24 flex flex-col gap-10 md:flex-row md:gap-[100px] lg:gap-[200px]">
                 <div class="flex flex-col gap-4">
                     <h3 class="text-3xl">What's different about Manage?</h3>
                     <p class="text-md">Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams.</p>
@@ -61,8 +65,90 @@
                     </div>
                 </div>  
             </section>
+            <section class="mt-24 mx-10 flex flex-col items-center">
+                <h3 class="bold text-4xl text-center mb-10">What they've said</h3>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide flex flex-col gap-3 items-center justify-center px-4 bg-gray-100  rounded-lg shadow-cardShadow">
+                            <img class="w-[70px] aspect-square rounded-full" src="./img/avatar-ali.png" alt="">
+                            <h4 class="bold text-4xl text-black">Ali Bravo</h4>
+                            <p class="text-opacity-60 text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, vero incidunt eligendi consectetur quae doloremque id dolor ad. Aliquam, tempore.</p>
+                      </div>
+                      <div class="swiper-slide flex flex-col gap-3 items-center justify-center px-4 bg-gray-100  rounded-lg shadow-cardShadow">
+                        <img class="w-[70px] aspect-square rounded-full" src="./img/avatar-anisha.png" alt="">
+                        <h4 class="bold text-4xl text-black">Anisha Li</h4>
+                        <p class="text-opacity-60 text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, vero incidunt eligendi consectetur quae doloremque id dolor ad. Aliquam, tempore.</p>
+                     </div>
+                    <div class="swiper-slide flex flex-col gap-3 items-center justify-center px-4 bg-gray-100  rounded-lg shadow-cardShadow">
+                        <img class="w-[70px] aspect-square rounded-full" src="./img/avatar-richard.png" alt="">
+                        <h4 class="bold text-4xl text-black">Richard Watts</h4>
+                        <p class="text-opacity-60 text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, vero incidunt eligendi consectetur quae doloremque id dolor ad. Aliquam, tempore.</p>
+                    </div>
+                    <div class="swiper-slide flex flex-col gap-3 items-center justify-center px-4 bg-gray-100  rounded-lg shadow-cardShadow">
+                        <img class="w-[70px] aspect-square rounded-full" src="./img/avatar-shanai.png" alt="">
+                        <h4 class="bold text-4xl text-black">Shanai Gough</h4>
+                        <p class="text-opacity-60 text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, vero incidunt eligendi consectetur quae doloremque id dolor ad. Aliquam, tempore.</p>
+                        </div>
+                        <div class="swiper-slide flex flex-col gap-3 items-center justify-center px-4 bg-gray-100  rounded-lg shadow-cardShadow">
+                            <img class="w-[70px] aspect-square rounded-full" src="./img/avatar-ali.png" alt="">
+                            <h4 class="bold text-4xl text-black">Ali Bravo</h4>
+                            <p class="text-opacity-60 text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, vero incidunt eligendi consectetur quae doloremque id dolor ad. Aliquam, tempore.</p>
+                    </div>
+                    <div class="swiper-slide flex flex-col gap-3 items-center justify-center px-4 bg-gray-100  rounded-lg shadow-cardShadow">
+                        <img class="w-[70px] aspect-square rounded-full" src="./img/avatar-anisha.png" alt="">
+                        <h4 class="bold text-4xl text-black">Anisha Li</h4>
+                        <p class="text-opacity-60 text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, vero incidunt eligendi consectetur quae doloremque id dolor ad. Aliquam, tempore.</p>
+                </div>
+                <div class="swiper-slide flex flex-col gap-3 items-center justify-center px-4 bg-gray-100  rounded-lg shadow-cardShadow">
+                    <img class="w-[70px] aspect-square rounded-full" src="./img/avatar-shanai.png" alt="">
+                    <h4 class="bold text-4xl text-black">Shanai Gough</h4>
+                    <p class="text-opacity-60 text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, vero incidunt eligendi consectetur quae doloremque id dolor ad. Aliquam, tempore.</p>
+                </div>
+                    </div>
+                  </div>
+                  <a href="#" class="hidden md:block min-w-max p-3 bg-brightRed rounded-full text-white px-8 py-2.5 hover:opacity-70 self-center mt-10">Get Started</a>
+            </section>
+            <section class="relative bg-orange-600 mt-24 h-[257px] flex flex-col md:flex-row items-center justify-center gap-10 md:justify-between px-4 md:px-20">
+                <h3 class="text-center md:text-left text-4xl bold text-white">Simplify how your team <br> workds today</h3>
+                <a class="bg-white text-orange-600 text-center bold rounded-full px-8 py-2.5 hover:bg-black hover:text-white transition-all ease-in duration-[250]" href="#">Get Started</a>
+                <img class="absolute inset-0" src="./img/bg-simplify-section-desktop.svg" alt="">
+            </section>
         </main>
-        <div class="text-left md:text-unset">checking the images</div>
-        <div><img src="./img/bg-simplify-section-desktop.svg" alt="this text should not be visible"></div>
+        <footer class="min-h-[228px] bg-black p-2 md:px-44 flex  items-center">
+            <div class="flex flex-col gap-4 md:gap-10">
+                <div>
+                    <img src="./img/logo-white.svg" alt="logo">
+                </div>
+                <ul class="flex gap-2">
+                    <a href="#"><img class="hover:opacity-80" src="./img/icon-facebook.svg" alt="facebook"></a>
+                    <a href="#"><img class="hover:opacity-80" src="./img/icon-youtube.svg" alt="youtube"></a>
+                    <a href="#"><img class="hover:opacity-80" src="./img/icon-twitter.svg" alt="twitter"></a>
+                    <a href="#"><img class="hover:opacity-80" src="./img/icon-pinterest.svg" alt="pinterest"></a>
+                    <a href="#"><img class="hover:opacity-80" src="./img/icon-instagram.svg" alt="instagram"></a>
+                </ul>
+            </div>
+            <div class="flex gap-10 ml-44">
+                <ul class="text-md relative z-1">
+                    <li><a class="text-white" href="#">Home</a></li>
+                    <li><a class="text-white" href="#">Pricing</a></li>
+                    <li><a class="text-white" href="#">Products</a></li>
+                    <li><a class="text-white" href="#">About Us</a></li>
+                </ul>
+                <ul class="text-md relative z-1">
+                    <li><a class="text-white" href="#">Careers</a></li>
+                    <li><a class="text-white" href="#">Policy</a></li>
+                    <li><a class="text-white" href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="flex flex-col gap-5 ml-auto relative z-1">
+                <form class="flex gap-1">
+                    <input class="px-2 rounded-full placeholder-gray-900" type="text" placeholder="Updates in your inbox...">
+                    <button type="submit" class="hidden md:block min-w-max p-3 bg-brightRed rounded-full text-white px-8 py-2.5 hover:opacity-70">Go</button>
+                </form>
+                <p class="text-sm text-gray-500">Copyright 2020. All Rights Reserved</p>
+            </form>
+        </footer>   
+        <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script defer src="./swiper.js"></script>
 </body>
 </html>

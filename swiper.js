@@ -3,6 +3,7 @@
     let width=this.document.documentElement.clientWidth
     noOfSlides=3
     //768 px is the md breakpoint
+    if(width<1024) noOfSlides=2
     if(width<768) noOfSlides=1
     const swiper = new Swiper('.swiper', {
         direction: 'horizontal',

@@ -11,24 +11,25 @@
     <title>Home Page</title>
 </head> 
 <body class="relative z-1">
-    <img class="absolute top-[-200px] right-[-200px] z-0 block" src="./img/bg-tablet-pattern.svg" alt="">
-        <header class="w-full h-28 z-1 relative">
-            <nav class="container mx-auto px-4 md:px-10 h-28 flex justify-center items-center gap-2 md:gap-10">
-                <img src="./img/logo.svg" alt="" class="block">
-                <ul class="hidden md:flex justify-between flex-grow  lg:px-20 gap-4 md:gap-8 lg:gap-12">
-                    <li class="list-none text-xl"><a href="" class="hover:text-darkGrayishBlue min-w-max">Pricing</a></li>
-                    <li class="list-none text-xl"><a href="" class="hover:text-darkGrayishBlue min-w-max">Product</a></li>
-                    <li class="list-none text-xl"><a href="" class="hover:text-darkGrayishBlue min-w-max">About Us</a></li>
-                    <li class="list-none text-xl"><a href="" class="hover:text-darkGrayishBlue min-w-max">Careers</a></li>
-                    <li class="list-none text-xl"><a href="" class="hover:text-darkGrayishBlue min-w-max">Community</a></li>
+    <img class="absolute top-[-200px] right-0 z-0 block" src="./img/bg-tablet-pattern.svg" alt="bakcground">
+        <header class="h-[132px] pt-2  z-1 relative">
+            <nav class="container md:mx-auto p-4 md:px-10 md:h-28 flex justify-between lg:justify-center items-center gap-2 md:gap-10">
+                <img src="./img/logo.svg" alt="" class="block z-[2]">
+                <button id="hamburger" class="lg:hidden"><i><ion-icon name="menu-outline" style="width:50px;height:50px"></ion-icon></i></button>
+                <ul id="mobile-menu" class="top-[-3000px] h-screen transition-all duration-300  flex absolute lg:relative p-10 lg:p-0 lg:top-0 left-0 right-0 z-[3] bg-brightRed lg:bg-transparent flex-col lg:flex-row lg:items-center lg:justify-between lg:flex-grow  lg:px-20 gap-12 md:gap-8 lg:gap-12">
+                    <li class="list-none text-xl"><a href="#" class="hover:text-darkGrayishBlue min-w-max text-white text-4xl lg:text-xl lg:text-black">Pricing</a></li>
+                    <li class="list-none text-xl"><a href="#" class="hover:text-darkGrayishBlue min-w-max text-white lg:text-black text-4xl lg:text-xl">Product</a></li>
+                    <li class="list-none text-xl"><a href="#" class="hover:text-darkGrayishBlue min-w-max text-white lg:text-black text-4xl lg:text-xl">About Us</a></li>
+                    <li class="list-none text-xl"><a href="#" class="hover:text-darkGrayishBlue min-w-max text-white lg:text-black text-4xl lg:text-xl">Careers</a></li>
+                    <li class="list-none text-xl"><a href="#" class="hover:text-darkGrayishBlue min-w-max text-white lg:text-black text-4xl lg:text-xl">Community</a></li>
                 </ul>
-                <a href="#" class="hidden md:block min-w-max p-3 bg-brightRed rounded-full text-white px-8 py-2.5 hover:opacity-70">Get Started</a>
+                <a href="#" class="hidden lg:block min-w-max p-3 bg-brightRed rounded-full text-white px-8 py-2.5 hover:opacity-70">Get Started</a>
             </nav>
         </header>
         <main class="mx-auto relative z-1">
             <section class="container mx-auto flex flex-col-reverse md:flex-row items-center justify-center mt-10 gap-[50px] md:gap-[100px] lg:gap-[200px]">
                 <div class="flex flex-col content-center p-10 gap-10 max-w-[420px]">
-                    <h1 class="text-5xl bold ">Bring everyone <br> together to build <br> better products.</h1>
+                    <h1 class="text-3xl md:text-5xl bold ">Bring everyone <br class="hidden md:inline"> together to build <br class="hidden md:inline"> better products.</h1>
                     <p class="">Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.</p>
                     <a class="p-3 bg-brightRed rounded-full text-white px-8 py-2.5 self-start hover:opacity-70" href="#">Get Started</a>
                 </div>
@@ -36,7 +37,7 @@
                     <img src="./img/illustration-intro.svg" alt="">
                 </div>
             </section>
-            <section class="px-2 md:px-0 container mx-auto mt-24 flex flex-col gap-10 md:flex-row md:gap-[100px] lg:gap-[200px]">
+            <section class="px-4 container mx-auto mt-24 flex flex-col gap-10 md:flex-row md:gap-[100px] lg:gap-[200px]">
                 <div class="flex flex-col gap-4">
                     <h3 class="text-3xl">What's different about Manage?</h3>
                     <p class="text-md">Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams.</p>
@@ -114,7 +115,7 @@
                 <img class="absolute inset-0" src="./img/bg-simplify-section-desktop.svg" alt="">
             </section>
         </main>
-        <footer class="min-h-[228px] bg-black p-2 md:px-44 flex  items-center">
+        <footer class="min-h-[228px] bg-black p-10 md:p-2 md:px-44 flex flex-col-reverse md:flex-row gap-8  items-center justify-center ">
             <div class="flex flex-col gap-4 md:gap-10">
                 <div>
                     <img src="./img/logo-white.svg" alt="logo">
@@ -127,7 +128,7 @@
                     <a href="#"><img class="hover:opacity-80" src="./img/icon-instagram.svg" alt="instagram"></a>
                 </ul>
             </div>
-            <div class="flex gap-10 ml-44">
+            <div class="flex gap-10 md:ml-44">
                 <ul class="text-md relative z-1">
                     <li><a class="text-white" href="#">Home</a></li>
                     <li><a class="text-white" href="#">Pricing</a></li>
@@ -140,15 +141,19 @@
                     <li><a class="text-white" href="#">Privacy Policy</a></li>
                 </ul>
             </div>
-            <div class="flex flex-col gap-5 ml-auto relative z-1">
+            <div class="flex flex-col justify-center gap-5 md:ml-auto relative z-1">
                 <form class="flex gap-1">
                     <input class="px-2 rounded-full placeholder-gray-900" type="text" placeholder="Updates in your inbox...">
                     <button type="submit" class="hidden md:block min-w-max p-3 bg-brightRed rounded-full text-white px-8 py-2.5 hover:opacity-70">Go</button>
                 </form>
                 <p class="text-sm text-gray-500">Copyright 2020. All Rights Reserved</p>
             </form>
+            </div>
         </footer>   
         <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
         <script defer src="./swiper.js"></script>
+        <script defer src="./hamburger.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
